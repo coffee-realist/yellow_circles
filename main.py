@@ -24,7 +24,7 @@ class Circles(QMainWindow, Ui_MainWindow):
         if self.flag:
             qp = QPainter()
             qp.begin(self)
-            coordinates = [(randint(50, 450), randint(50, 450)) for _ in range(16)]
+            coordinates = [(randint(25, 475), randint(50, 450)) for _ in range(16)]
             for x, y in coordinates:
                 qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
                 current_radius = randint(10, 150)
